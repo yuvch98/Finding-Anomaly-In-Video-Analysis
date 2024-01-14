@@ -12,7 +12,6 @@ from tensorflow import Keras
 
 
 # the following code is how we capture a video using cv2 library
-
 cap = cv2.VideoCapture("Abuse001_x264.mp4")
 while True:
 
