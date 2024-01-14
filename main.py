@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 # from google.colab.patches import cv2_imshow -> this is only to be used when using google colab!
 from matplotlib import pyplot as plt
-from tensorflow import Keras
+import keras
 
 #frame - has 240x320 pixels in our current example
 #pixel - (0-255,0-255,0-255)
@@ -12,7 +12,7 @@ from tensorflow import Keras
 
 
 # the following code is how we capture a video using cv2 library
-cap = cv2.VideoCapture("Abuse001_x264.mp4")
+cap = cv2.VideoCapture("Anomaly.mp4")
 while True:
 
     ret, frame = cap.read()
